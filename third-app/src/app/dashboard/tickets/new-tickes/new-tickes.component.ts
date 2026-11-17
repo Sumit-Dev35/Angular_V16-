@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
+import {FormsModule} from '@angular/forms'
 import { ButtonComponent } from '../../../shared/button/button.component';
 import { ControlComponent } from '../../../shared/control/control.component';
 
 @Component({
   selector: 'app-new-tickes',
   standalone: true,
-  imports: [ButtonComponent, ControlComponent],
+  imports: [ButtonComponent, ControlComponent,FormsModule],
   templateUrl: './new-tickes.component.html',
   styleUrl: './new-tickes.component.css'
 })
 export class NewTickesComponent {
+
+
+  onSubmit(){
+
+  }
 
 }
